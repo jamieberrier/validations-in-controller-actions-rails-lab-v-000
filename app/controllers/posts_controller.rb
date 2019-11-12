@@ -11,9 +11,9 @@ class PostsController < ApplicationController
     binding.pry
     if @post.update(post_params)
       redirect_to post_path(@post)
-    else
-      render :edit
-    end
+    #else
+    #  render :edit
+    #end
   end
 
   private
